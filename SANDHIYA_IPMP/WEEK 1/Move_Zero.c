@@ -17,8 +17,10 @@ void moveZeroes(int* nums, int numsSize) {
 }
 int main()
 {
-    int nums[]={0};
     int i,n;
+    scanf("%d",&n);
+    int nums[n];
+    for(i=0;i<n;i++) scanf ("%d",&nums[i]);
     n=1;
     for(i=0;i<n;i++) printf("%d ",nums[i]); printf("\n");
     moveZeroes(nums,n);
