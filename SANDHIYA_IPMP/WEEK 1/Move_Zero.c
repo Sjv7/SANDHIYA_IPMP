@@ -20,9 +20,7 @@ int main()
     int i,n;
     scanf("%d",&n);
     int nums[n];
-    for(i=0;i<n;i++) scanf ("%d",&nums[i]);
-    n=1;
-    for(i=0;i<n;i++) printf("%d ",nums[i]); printf("\n");
+    for(i=0;i<n;i++) scanf("%d",&nums[i]);
     moveZeroes(nums,n);
     for(i=0;i<n;i++) printf("%d ",nums[i]);
 
