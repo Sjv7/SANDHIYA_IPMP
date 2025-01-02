@@ -6,8 +6,8 @@ int GetOdd(int a[],int n)
     int i,j,count;
     for(i=0;i<n;i++)
     {
-        count=0;
-        for(j=0;j<n;j++)
+        count=1;
+        for(j=i+1;j<n;j++)
         {
             if(a[i]==a[j])
             count++;
@@ -31,8 +31,8 @@ int main()
         // int a[] = { 2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2, 5, 6}; //6
         int a[] = { 2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2 };
         int n=sizeof(a)/sizeof(a[0]);
-        // cout << GetOdd(a, n);
-        cout << GetOddOpt(a, n);
+        cout << GetOdd(a, n);
+        // cout << GetOddOpt(a, n);
 
         return 0;
     }
